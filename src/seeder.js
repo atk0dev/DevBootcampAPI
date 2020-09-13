@@ -45,7 +45,7 @@ const importData = async () => {
     await User.create(users);
     await Review.create(reviews);
     console.log('Data Imported...'.green.inverse);
-    process.exit();
+    //process.exit();
   } catch (err) {
     console.error(err);
   }
@@ -59,17 +59,23 @@ const deleteData = async () => {
     await User.deleteMany();
     await Review.deleteMany();
     console.log('Data Destroyed...'.red.inverse);
-    process.exit();
+    //process.exit();
   } catch (err) {
     console.error(err);
   }
 };
 
 if (process.argv[2] === '-i') {
-  importData();
+  importData().then(r => {
+    console.log('Imported'.blue);
+    process.exit();
+  });
 } else if (process.argv[2] === '-d') {
-  deleteData();
-} else if (process.argv[2] === '-r') {
-  deleteData();
-  importData();
+  deleteData().then(r => {
+    console.log('Deleted'.blue);
+    process.exit();
+  });
+} else {
+  console.log('Command has not been recognized. Use -i or -d'.red.bold);
+  process.exit();
 }
