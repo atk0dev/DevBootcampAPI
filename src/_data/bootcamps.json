@@ -63,5 +63,25 @@
     "jobAssistance": true,
     "jobGuarantee": true,
     "acceptGi": true
+  },
+  {
+    "_id": "5d725a1b7b292f5f8ceff789",
+    "user": "5c8a1d5b0190b214360dc034",
+    "name": "Test bootcamp",
+    "description": "Test bootcamp",
+    "website": "https://test.com",
+    "phone": "(444) 444-4444",
+    "email": "enroll@devcentral.com",
+    "address": "223 Druzhby Narodiv Kharkiv Ukraine 61184",
+    "careers": [
+      "Mobile Development",
+      "Web Development",
+      "Data Science",
+      "Business"
+    ],
+    "housing": false,
+    "jobAssistance": true,
+    "jobGuarantee": true,
+    "acceptGi": true
   }
 ]
