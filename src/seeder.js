@@ -72,7 +72,7 @@ if (process.argv[2] === '-i') {
   });
 } else if (process.argv[2] === '-d') {
   deleteData().then(r => {
-    console.log('Deleted'.blue);
+    console.log('Destroyed'.blue);
     process.exit();
   });
 } else {

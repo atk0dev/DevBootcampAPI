@@ -30,6 +30,138 @@
 					"response": []
 				},
 				{
+					"name": "Search Bootcamps",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/api/v1/bootcamps?averageRating[lte]=6&location.state=MA",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"bootcamps"
+							],
+							"query": [
+								{
+									"key": "averageRating[lte]",
+									"value": "6"
+								},
+								{
+									"key": "location.state",
+									"value": "MA"
+								}
+							]
+						},
+						"description": "Fetch all bootcamps from database. Includes pagination, filtering, etc"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Bootcamps Shaped",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/api/v1/bootcamps?select=name,description,housing&housing=false&sort=name",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"bootcamps"
+							],
+							"query": [
+								{
+									"key": "select",
+									"value": "name,description,housing"
+								},
+								{
+									"key": "housing",
+									"value": "false"
+								},
+								{
+									"key": "sort",
+									"value": "name"
+								}
+							]
+						},
+						"description": "Fetch all bootcamps from database. Includes pagination, filtering, etc"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Bootcamps Limit",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/api/v1/bootcamps?select=name,description&housing=false&limit=2&page=2&sort=name",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"bootcamps"
+							],
+							"query": [
+								{
+									"key": "select",
+									"value": "name,description"
+								},
+								{
+									"key": "housing",
+									"value": "false"
+								},
+								{
+									"key": "limit",
+									"value": "2"
+								},
+								{
+									"key": "page",
+									"value": "2"
+								},
+								{
+									"key": "sort",
+									"value": "name"
+								}
+							]
+						},
+						"description": "Fetch all bootcamps from database. Includes pagination, filtering, etc"
+					},
+					"response": []
+				},
+				{
+					"name": "Search Bootcamps 2",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/api/v1/bootcamps?careers[in]=Business",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"bootcamps"
+							],
+							"query": [
+								{
+									"key": "careers[in]",
+									"value": "Business"
+								}
+							]
+						},
+						"description": "Fetch all bootcamps from database. Includes pagination, filtering, etc"
+					},
+					"response": []
+				},
+				{
 					"name": "Get Single Bootcamp",
 					"request": {
 						"method": "GET",
@@ -188,7 +320,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{URL}}/api/v1/bootcamps/radius/02118/10",
+							"raw": "{{URL}}/api/v1/bootcamps/radius/02881-2003/10",
 							"host": [
 								"{{URL}}"
 							],
@@ -197,7 +329,7 @@
 								"v1",
 								"bootcamps",
 								"radius",
-								"02118",
+								"02881-2003",
 								"10"
 							]
 						},
@@ -233,7 +365,7 @@
 								{
 									"key": "file",
 									"type": "file",
-									"src": "/Users/bradtraversy/Downloads/abstract-art-artistic-1328891.jpg"
+									"src": "/C:/Users/Andrey/OneDrive/Pictures/bootcamp.jpg"
 								},
 								{
 									"key": "Autho",
@@ -244,7 +376,7 @@
 							]
 						},
 						"url": {
-							"raw": "{{URL}}/api/v1/bootcamps/5d725a1b7b292f5f8ceff788/photo",
+							"raw": "{{URL}}/api/v1/bootcamps/5d713995b721c3bb38c1f5d0/photo",
 							"host": [
 								"{{URL}}"
 							],
@@ -252,7 +384,7 @@
 								"api",
 								"v1",
 								"bootcamps",
-								"5d725a1b7b292f5f8ceff788",
+								"5d713995b721c3bb38c1f5d0",
 								"photo"
 							]
 						},
