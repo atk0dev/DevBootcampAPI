@@ -15,6 +15,7 @@ const errorHandler = require('./middleware/error');
 const connectDB = require('./config/db');
 const shortid = require('shortid');
 const logger = require('./middleware/logger');
+var fs = require('fs');
 
 // Load env vars
 dotenv.config({ path: './config/config.env' });
@@ -53,6 +54,10 @@ app.use(cookieParser());
 // Dev logging middleware
 if (process.env.NODE_ENV === 'development') {
   app.use(morgan('dev'));
+}
+
+if (!fs.existsSync(process.env.FILE_UPLOAD_PATH)){
+  fs.mkdirSync(process.env.FILE_UPLOAD_PATH);
 }
 
 // File uploading
