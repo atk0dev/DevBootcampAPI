@@ -10,6 +10,10 @@ const User = require('../models/User');
 exports.register = asyncHandler(async (req, res, next) => {
   const { name, email, password, role } = req.body;
 
+  if (role === 'admin') {
+    return next(new ErrorResponse('Unable to register user with role admin', 400));
+  }
+
   // Create user
   const user = await User.create({
     name,

@@ -99,7 +99,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{URL}}/api/v1/bootcamps?select=name,description&housing=false&limit=2&page=2&sort=name",
+							"raw": "{{URL}}/api/v1/bootcamps?select=name,description,photo&housing=false&limit=2&page=2&sort=name",
 							"host": [
 								"{{URL}}"
 							],
@@ -111,7 +111,7 @@
 							"query": [
 								{
 									"key": "select",
-									"value": "name,description"
+									"value": "name,description,photo"
 								},
 								{
 									"key": "housing",
@@ -211,7 +211,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\t\"name\": \"ModernTech Bootcamp\",\n\t\t\"description\": \"ModernTech has one goal, and that is to make you a rockstar developer and/or designer with a six figure salary. We teach both development and UI/UX\",\n\t\t\"website\": \"https://moderntech.com\",\n\t\t\"phone\": \"(222) 222-2222\",\n\t\t\"email\": \"enroll@moderntech.com\",\n\t\t\"address\": \"220 Pawtucket St, Lowell, MA 01854\",\n\t\t\"careers\": [\"Web Development\", \"UI/UX\", \"Mobile Development\"],\n\t\t\"housing\": false,\n\t\t\"jobAssistance\": true,\n\t\t\"jobGuarantee\": false,\n\t\t\"acceptGi\": true\n}"
+							"raw": "{\n\t\"name\": \"ModernTech Bootcamp 111111\",\n\t\t\"description\": \"ModernTech has one goal, and that is to make you a rockstar developer and/or designer with a six figure salary. We teach both development and UI/UX\",\n\t\t\"website\": \"https://moderntech.com\",\n\t\t\"phone\": \"(222) 222-2222\",\n\t\t\"email\": \"enroll@moderntech.com\",\n\t\t\"address\": \"220 Pawtucket St, Lowell, MA 01854\",\n\t\t\"careers\": [\"Web Development\", \"UI/UX\", \"Mobile Development\"],\n\t\t\"housing\": false,\n\t\t\"jobAssistance\": true,\n\t\t\"jobGuarantee\": false,\n\t\t\"acceptGi\": true\n}"
 						},
 						"url": {
 							"raw": "{{URL}}/api/v1/bootcamps",
@@ -376,7 +376,7 @@
 							]
 						},
 						"url": {
-							"raw": "{{URL}}/api/v1/bootcamps/5d713995b721c3bb38c1f5d0/photo",
+							"raw": "{{URL}}/api/v1/bootcamps/5d725a1b7b292f5f8ceff788/photo",
 							"host": [
 								"{{URL}}"
 							],
@@ -384,7 +384,7 @@
 								"api",
 								"v1",
 								"bootcamps",
-								"5d713995b721c3bb38c1f5d0",
+								"5d725a1b7b292f5f8ceff788",
 								"photo"
 							]
 						},
@@ -413,6 +413,40 @@
 								"api",
 								"v1",
 								"courses"
+							]
+						},
+						"description": "Get all courses in database"
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Courses with params",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/api/v1/courses?select=title&page=2&limit=3",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"courses"
+							],
+							"query": [
+								{
+									"key": "select",
+									"value": "title"
+								},
+								{
+									"key": "page",
+									"value": "2"
+								},
+								{
+									"key": "limit",
+									"value": "3"
+								}
 							]
 						},
 						"description": "Get all courses in database"
@@ -630,7 +664,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\t\"name\": \"John Doe\",\n\t\"email\": \"john@gmail.com\",\n\t\"password\": \"123456\",\n\t\"role\": \"publisher\"\n}"
+							"raw": "{\n\t\"name\": \"Application Maintainer\",\n\t\"email\": \"application.maintainer@email.com\",\n\t\"password\": \"Passw0rd\",\n    \"role\": \"publisher\"\n}"
 						},
 						"url": {
 							"raw": "{{URL}}/api/v1/auth/register",
@@ -674,7 +708,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\t\"email\": \"john@gmail.com\",\n\t\"password\": \"123456\"\n}"
+							"raw": "{\n\t\"email\": \"application.maintainer@email.com\",\n\t\"password\": \"Passw0rd\"\n}"
 						},
 						"url": {
 							"raw": "{{URL}}/api/v1/auth/login",
@@ -1043,7 +1077,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\t\"name\": \"Nate Smith\",\n\t\"email\": \"nate@gmail.com\",\n\t\"password\": \"123456\"\n}"
+							"raw": "{\n\t\"name\": \"Application Maintainer\",\n\t\"email\": \"application.maintainer@email.com\",\n\t\"password\": \"Passw0rd\"\n}"
 						},
 						"url": {
 							"raw": "{{URL}}/api/v1/users/",
@@ -1400,6 +1434,144 @@
 				}
 			],
 			"description": "Manage course reviews",
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Signals",
+			"item": [
+				{
+					"name": "Send signal",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"description": "JSON Type",
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVkN2E1MTRiNWQyYzEyYzc0NDliZTA0NSIsImlhdCI6MTU3MTA1NzkzMywiZXhwIjoxNTczNjQ5OTMzfQ.rTumDmWSKzoiGrarbCRqpVBVVfHo5su4TNagQM6c2Ts"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"payload\": {\n        \"name\": \"FSG API Test\",\n        \"url\": \"https://aaaa.aa/aaa\",\n        \"clientIp\": \"8.8.8.8\"\n    }\n}"
+						},
+						"url": {
+							"raw": "{{URL}}/api/v1/signals/fsg-test",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"signals",
+								"fsg-test"
+							]
+						},
+						"description": "Add new bootcamp to database. Must be authenticated and must be publisher or admin. Only 1 bootcamp allowed per publisher"
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Signals",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/api/v1/signals",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"signals"
+							]
+						},
+						"description": "Fetch all bootcamps from database. Includes pagination, filtering, etc"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Signal",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/api/v1/signals/fsg-prod",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"signals",
+								"fsg-prod"
+							]
+						},
+						"description": "Fetch all bootcamps from database. Includes pagination, filtering, etc"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Signal",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/api/v1/signals/fsg-prod2",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"signals",
+								"fsg-prod2"
+							]
+						},
+						"description": "Fetch all bootcamps from database. Includes pagination, filtering, etc"
+					},
+					"response": []
+				}
+			],
 			"protocolProfileBehavior": {}
 		}
 	],

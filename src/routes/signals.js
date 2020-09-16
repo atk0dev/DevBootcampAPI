@@ -16,13 +16,13 @@ const { protect, authorize } = require('../middleware/auth');
 
 router
     .route('/')
-    .get(protect, authorize('publisher'), advancedResults(Signal), getSignals);
+    .get(protect, authorize('publish'), advancedResults(Signal), getSignals);
 
 router
     .route('/:name')
-    .get(protect, authorize('publisher'), getSignal)
+    .get(protect, authorize('publish'), getSignal)
     .post(sendSignal)
-    .delete(protect, authorize('publisher', 'admin'), deleteSignal);
+    .delete(protect, authorize('publish', 'admin'), deleteSignal);
 
 module.exports = router;
 

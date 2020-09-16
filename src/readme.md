@@ -33,3 +33,10 @@ node seeder -d
 # Import all data
 node seeder -i
 ```
+
+## Todo
+
+```
+1. Replace magic strings to const
+2. Transword mongo response object to dto
+``` 
