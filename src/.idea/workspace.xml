@@ -26,18 +26,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="253553f9-d5a6-40a3-bad2-560d678985c8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../postman/DevCamper API.postman_collection.json" beforeDir="false" afterPath="$PROJECT_DIR$/../postman/DevCamper API.postman_collection.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_data/bootcamps.json" beforeDir="false" afterPath="$PROJECT_DIR$/_data/bootcamps.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_data/courses.json" beforeDir="false" afterPath="$PROJECT_DIR$/_data/courses.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_data/reviews.json" beforeDir="false" afterPath="$PROJECT_DIR$/_data/reviews.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_data/users.json" beforeDir="false" afterPath="$PROJECT_DIR$/_data/users.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/auth.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/User.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/User.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/bootcamps.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/bootcamps.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/courses.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/courses.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/signals.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/signals.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/config.env" beforeDir="false" afterPath="$PROJECT_DIR$/config/config.env" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,11 +53,16 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/middleware" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\work\github-atk0dev\DevBootcampAPI\src\middleware" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="dev" type="js.build_tools.npm" nameIsGenerated="true">
@@ -95,7 +90,8 @@
       <workItem from="1600104165732" duration="7964000" />
       <workItem from="1600150883679" duration="7175000" />
       <workItem from="1600187691509" duration="8064000" />
-      <workItem from="1600236235474" duration="2543000" />
+      <workItem from="1600236235474" duration="2606000" />
+      <workItem from="1600375334241" duration="4408000" />
     </task>
     <task id="LOCAL-00001" summary="Working on seeder">
       <created>1600024631707</created>
@@ -139,7 +135,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600204671386</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Modifying models">
+      <created>1600242340992</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1600242340992</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -173,37 +176,42 @@
     <MESSAGE value="Working on seeder" />
     <MESSAGE value="Minor changes" />
     <MESSAGE value="Added signals" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added signals" />
+    <MESSAGE value="Modifying models" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modifying models" />
   </component>
   <component name="WindowStateProjectService">
     <state x="414" y="175" width="1092" height="714" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1600017920730">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="414" y="175" width="1092" height="714" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600017920730" />
-    <state x="585" y="88" key="CommitChangelistDialog2" timestamp="1600204670148">
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1600380523543">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="585" y="88" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1600204670148" />
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600380523543" />
+    <state x="585" y="88" key="CommitChangelistDialog2" timestamp="1600242339027">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="585" y="88" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1600242339027" />
     <state width="746" height="466" key="DebuggerActiveHint" timestamp="1600104792668">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="746" height="466" key="DebuggerActiveHint/0.0.1920.1040@0.0.1920.1040" timestamp="1600104792668" />
-    <state width="1899" height="348" key="GridCell.Tab.0.bottom" timestamp="1600204713820">
+    <state width="1899" height="282" key="GridCell.Tab.0.bottom" timestamp="1600380749121">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="348" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1600204713820" />
-    <state width="1899" height="348" key="GridCell.Tab.0.center" timestamp="1600204713819">
+    <state width="1899" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1600380749121" />
+    <state width="1899" height="282" key="GridCell.Tab.0.center" timestamp="1600380749121">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="348" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1600204713819" />
-    <state width="1899" height="348" key="GridCell.Tab.0.left" timestamp="1600204713819">
+    <state width="1899" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1600380749121" />
+    <state width="1899" height="282" key="GridCell.Tab.0.left" timestamp="1600380749121">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="348" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1600204713819" />
-    <state width="1899" height="348" key="GridCell.Tab.0.right" timestamp="1600204713819">
+    <state width="1899" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1600380749121" />
+    <state width="1899" height="282" key="GridCell.Tab.0.right" timestamp="1600380749121">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="348" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1600204713819" />
+    <state width="1899" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1600380749121" />
     <state width="1899" height="348" key="GridCell.Tab.1.bottom" timestamp="1600204713820">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -256,17 +264,17 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1920.1040@0.0.1920.1040" timestamp="1600204703689" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1600204679218">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1600242351619">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1600204679218" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1600242351619" />
     <state x="667" y="119" width="585" height="801" key="find.popup" timestamp="1600237413114">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="667" y="119" width="585" height="801" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1600237413114" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1600236757346">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1600380311764">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1600236757346" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1600380311764" />
   </component>
 </project>
