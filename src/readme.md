@@ -38,5 +38,5 @@ node seeder -i
 
 ```
 1. Replace magic strings to const
-2. Transword mongo response object to dto
+2. Transform mongo response object to dto
 ``` 
