@@ -39,7 +39,7 @@ node seeder -i
 ```
 1. Replace magic strings to const
 2. Transform mongo response object to dto
-``` 
+```
 
 ## Generate documentation
 
@@ -49,6 +49,7 @@ Generated with: https://github.com/thedevsaddam/docgen
 c:\soft\DocGen\windows_386.exe build -i "c:\work\github-atk0dev\DevBootcampAPI\postman\DevCamper API.postman_collection.json" -o index.html
 
 ```
+
 ## DO
 
 ```
@@ -72,10 +73,12 @@ ufw allow ssh
 ufw allow http
 
 nginx config
-nano /etc/nginx/sites-available/default 
+nano /etc/nginx/sites-available/default
 service nginx restart
 
-published here: http://devatk11.com/apps/bootcamp/
+published here: https://devatk11.com/apps/bootcamp/
 
+renew cert:
+certbot renew --dry-run
 
 ```

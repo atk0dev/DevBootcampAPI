@@ -27,7 +27,6 @@
   <component name="ChangeListManager">
     <list default="true" id="253553f9-d5a6-40a3-bad2-560d678985c8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +94,7 @@
       <workItem from="1600408007887" duration="2116000" />
       <workItem from="1600411819953" duration="109000" />
       <workItem from="1600426709724" duration="1999000" />
-      <workItem from="1600515953735" duration="3840000" />
+      <workItem from="1600515953735" duration="4175000" />
     </task>
     <task id="LOCAL-00001" summary="Working on seeder">
       <created>1600024631707</created>
@@ -146,7 +145,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600242340992</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Added hosting commands">
+      <created>1600520780896</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1600520780901</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -181,7 +187,8 @@
     <MESSAGE value="Minor changes" />
     <MESSAGE value="Added signals" />
     <MESSAGE value="Modifying models" />
-    <option name="LAST_COMMIT_MESSAGE" value="Modifying models" />
+    <MESSAGE value="Added hosting commands" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added hosting commands" />
   </component>
   <component name="WindowStateProjectService">
     <state x="414" y="175" width="1092" height="714" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1600017920730">
@@ -192,10 +199,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600380523543" />
-    <state x="585" y="88" key="CommitChangelistDialog2" timestamp="1600242339027">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="615" y="116" width="960" height="904" key="CommitChangelistDialog2" timestamp="1600520780744">
+      <screen x="43" y="27" width="1877" height="1053" />
     </state>
     <state x="585" y="88" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1600242339027" />
+    <state x="615" y="116" width="960" height="904" key="CommitChangelistDialog2/43.27.1877.1053@43.27.1877.1053" timestamp="1600520780744" />
     <state width="746" height="466" key="DebuggerActiveHint" timestamp="1600104792668">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -268,10 +276,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1920.1040@0.0.1920.1040" timestamp="1600204703689" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1600242351619">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="583" y="283" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1600520787077">
+      <screen x="43" y="27" width="1877" height="1053" />
     </state>
     <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1600242351619" />
+    <state x="583" y="283" width="800" height="528" key="Vcs.Push.Dialog.v2/43.27.1877.1053@43.27.1877.1053" timestamp="1600520787077" />
     <state x="716" y="485" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1600515995233">
       <screen x="43" y="27" width="1877" height="1053" />
     </state>
